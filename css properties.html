@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model and Layout</title>
+  <style>
+    /* Element Selector: applies to all paragraphs */
+    p {
+      color: darkslategray;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 20px 10%; /* percentage and px values */
+      padding: 10px 15px;
+      border: 2px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    /* Class Selector: highlight section */
+    .highlight {
+      background-color: #fff8dc;
+      color: darkred;
+      font-weight: bold;
+      margin: 1.5em 5%; /* using em and percentage units */
+      padding: 2em;
+      border: 3px dashed orange;
+    }
+
+    /* ID Selector: main heading */
+    #main-heading {
+      font-size: 32px;
+      color: white;
+      background-color: darkgreen;
+      padding: 20px; /* internal spacing */
+      margin: 30px auto; /* centers the heading */
+      text-align: center;
+      width: 80%;
+      border-radius: 8px;
+      border: 4px solid #0a0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef5f0;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">Understanding the CSS Box Model</h1>
+
+  <p>The <strong>box model</strong> in CSS represents the structure of every HTML element. It consists of margins, borders, padding, and the actual content area. Adjusting these values changes the spacing and layout of the webpage.</p>
+
+  <p class="highlight">This section demonstrates the impact of different <strong>margin</strong> and <strong>padding</strong> units (px, em, %). Try changing the values and observe how elements move or resize within the layout.</p>
+
+  <p>Notice how the <em>margin</em> adds space outside an element, while <em>padding</em> adds space inside the border, pushing the content inward.</p>
+</body>
+</html>

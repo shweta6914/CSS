@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Column Layout using CSS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Layout container */
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Ensures responsiveness */
+      min-height: 90vh;
+    }
+
+    /* Fixed sidebar */
+    .sidebar {
+      background-color: #2ecc71;
+      color: white;
+      width: 250px; /* fixed width */
+      padding: 20px;
+      box-sizing: border-box;
+      flex-shrink: 0; /* prevents resizing */
+    }
+
+    /* Fluid content area */
+    .content {
+      background-color: #ecf0f1;
+      flex: 1; /* makes it take remaining space */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Example elements */
+    h2 {
+      color: #2c3e50;
+    }
+
+    p {
+      color: #34495e;
+      line-height: 1.6;
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        text-align: center;
+      }
+      .content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Two-Column Layout with Fixed and Fluid Sections</h1>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Fixed Sidebar</h2>
+      <p>This is the fixed column with a set width of 250px. It remains the same size, even when the browser window is resized.</p>
+    </div>
+
+    <div class="content">
+      <h2>Fluid Content Area</h2>
+      <p>This is the fluid column. It automatically adjusts its width based on the remaining available space in the container. This makes it responsive and user-friendly on various screen sizes.</p>
+
+      <p>Try resizing the browser window to observe how the fixed sidebar and the fluid content behave across different devices.</p>
+    </div>
+  </div>
+</body>
+</html>

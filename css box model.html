@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1a5d1a;
+      margin-bottom: 30px;
+    }
+
+    /* The element representing the box model */
+    .box-model {
+      background-color: #ffffff;
+      padding: 30px; /* padding area */
+      border: 10px solid #4caf50; /* border area */
+      margin: 40px auto; /* margin area */
+      width: 300px;
+      position: relative;
+    }
+
+    /* Labels for each box model layer */
+    .label {
+      position: absolute;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    .label-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: none;
+      border: none;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .label-padding {
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .label-border {
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #4caf50;
+    }
+
+    .label-margin {
+      top: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #d9534f;
+    }
+
+    .content-box {
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .explanation {
+      text-align: left;
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 5px solid #4caf50;
+    }
+  </style>
+</head>
+<body>

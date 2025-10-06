@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Element Selector */
+    h1 {
+      color: navy;
+      background-color: lightblue;
+      text-align: center;
+      
+    }
+
+    p {
+      color: darkslategray;
+      
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      color: darkred;
+    }
+
+    /* ID Selector */
+    #main-heading {
+      font-size: 30px;
+      color: white;
+      background-color: darkgreen;
+     
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">Exploring CSS Selectors</h1>
+
+  <p>This paragraph is styled using an <strong>element selector</strong>. It changes the text color and font size for all paragraph elements.</p>
+
+  <p class="highlight">This paragraph uses a <strong>class selector</strong> to make it stand out with a yellow background and dark red text.</p>
+
+  <p>Another example of an element selector affecting all paragraph tags equally. You can combine class and ID selectors for more specific styling.</p>
+</body>
+</html>
