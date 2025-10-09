@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navigation Menu</title>
+ <style>
+    /* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar container */
+.navbar {
+  background-color: #1e90ff;
+  padding: 15px 0;
+}
+
+/* Flexbox for menu alignment */
+.nav-menu {
+  display: flex;                /* Enables Flexbox */
+  justify-content: center;      /* Centers the menu horizontally */
+  align-items: center;          /* Vertically aligns menu items */
+  list-style: none;             /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual menu items */
+.nav-menu li {
+  margin: 0 30px;               /* Space between items */
+}
+
+/* Links inside the menu */
+.nav-menu a {
+  text-decoration: none;        /* Removes underline */
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;    /* Smooth hover transition */
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  color: #1e90ff;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Optional: Slight responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-direction: column;     /* Stack items vertically */
+  }
+  
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}
+
+ </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
