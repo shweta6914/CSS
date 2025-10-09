@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Example</title>
+  
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.box {
+  background-color: #add8e6; /* Light blue for content */
+  padding: 30px;             /* Inner space */
+  border: 5px solid #1e90ff; /* Blue border */
+  margin: 40px;              /* Outer space */
+  width: 200px;
+  display: inline-block;
+}
+
+.box p {
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.labels {
+  margin-top: 30px;
+  text-align: left;
+  display: inline-block;
+}
+ 
+  </style>
+</head>
+<body>
+  <h2>CSS Box Model Demonstration</h2>
+  <div class="box">
+    <p>Content Area</p>
+  </div>
+
+  <div class="labels">
+    <p><strong>Margin:</strong> Space outside the border of the element.</p>
+    <p><strong>Border:</strong> Surrounds the padding and content.</p>
+    <p><strong>Padding:</strong> Space between the content and the border.</p>
+    <p><strong>Content:</strong> The actual text or image inside the element.</p>
+  </div>
+</body>
+</html>
